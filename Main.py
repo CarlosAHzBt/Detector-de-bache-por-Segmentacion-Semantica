@@ -88,7 +88,7 @@ def procesar_imagenes(carpeta_imagenes, ruta_modelo, carpeta_resultados):
             
             # Guardar la imagen original, la máscara y la combinación
             imagen.save(os.path.join(carpeta_resultados, f"{nombre_imagen}_original.png"))
-            plt.imsave(os.path.join(carpeta_resultados, f"{nombre_imagen}_mask.png"), mask_resized, cmap="gray")
+            plt.imsave(os.path.join(carpeta_resultados, f"{nombre_imagen}_mask.png"), mask_resized, cmap="jet")
 
             # Dibujar detecciones sobre la imagen
             plt.figure()
